@@ -29,18 +29,21 @@ const USER_DATA: UserElement[] = [
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
   displayedColumns: string[] = ['id', 'name', 'position', 'company', 'phone', 'city'];
 
   dataSource= USER_DATA;
+  title ='Angular-material'
 
   foods: Food[] = [
     {value: 'steak-0', viewValue: 'Steak'},
     {value: 'pizza-1', viewValue: 'Pizza'},
     {value: 'tacos-2', viewValue: 'Tacos'},
   ];
+  panelOpenState = false;
+
 
 
 }
